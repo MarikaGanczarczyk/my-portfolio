@@ -11,17 +11,27 @@ const Navbar = () => {
   const [menu, setmenu] = useState("home")
   const menuRef = useRef()
 
-  const openMenu = ()=>{
-    menuRef.current.style.right="0"
+const openMenu = () => {
+  console.log("menuRef.current:", menuRef.current);
+  if (menuRef.current) {
+    menuRef.current.style.right = "0";
   }
-  const closeMenu = ()=>{
-    menuRef.current.style.right="-350px"
+};
+
+const closeMenu = () => {
+  console.log("menuRef.current:", menuRef.current);
+  if (menuRef.current) {
+    menuRef.current.style.right = "-350px";
   }
+};
+
+
+ 
   return (
     <div className='navbar'>
-      <img src={menu_open} onClick={openMenu} alt="" className='nav-mob-open'/>
+      <img src={menu_open}  onClick={openMenu} alt="" className='nav-mob-open'/>
       <ul ref={menuRef} className="nav-menu">
-        <img ref={closeMenu} onClick={closeMenu} className='nav-mob-close' src={menu_close} alt="" />
+        <img  onClick={closeMenu} className='nav-mob-close' src={menu_close} alt="" />
         <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>setmenu("home")}>Home</p>{menu==="home"?<img src={underline}/>:<></>}</AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setmenu("about")}>About Me</p>{menu==="about"?<img src={underline}/>:<></>}</AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setmenu("services")}>Services</p>{menu==="services"?<img src={underline}/>:<></>}</AnchorLink></li>
