@@ -8,35 +8,32 @@ import menu_close from '../../assets/menu_close.svg'
 
 
 const Navbar = () => {
-  const [menu, setmenu] = useState("home")
-  const menuRef = useRef()
+  const [menu, setMenu] = useState("home")
+  
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-const openMenu = () => {
-  console.log("menuRef.current:", menuRef.current);
-  if (menuRef.current) {
-    menuRef.current.style.right = "0";
+ const handleLinkClick = (section) => {
+    setMenu(section)
+    setIsMenuOpen(false) 
   }
-};
 
-const closeMenu = () => {
-  console.log("menuRef.current:", menuRef.current);
-  if (menuRef.current) {
-    menuRef.current.style.right = "-350px";
-  }
-};
+
 
 
  
   return (
     <div className='navbar'>
-      <img src={menu_open}  onClick={openMenu} alt="" className='nav-mob-open'/>
-      <ul ref={menuRef} className="nav-menu">
-        <img  onClick={closeMenu} className='nav-mob-close' src={menu_close} alt="" />
-        <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>setmenu("home")}>Home</p>{menu==="home"?<img src={underline}/>:<></>}</AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setmenu("about")}>About Me</p>{menu==="about"?<img src={underline}/>:<></>}</AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setmenu("services")}>Services</p>{menu==="services"?<img src={underline}/>:<></>}</AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>setmenu("work")}>Portfolio</p>{menu==="work"?<img src={underline}/>:<></>}</AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setmenu("contact")}>Contact</p>{menu==="contact"?<img src={underline}/>:<></>}</AnchorLink></li>
+      <img src={menu_open}  onClick={()=> setIsMenuOpen(true)} alt="" className='nav-mob-open'/>
+      <ul  className="nav-menu" style={{
+          right: isMenuOpen ? '0' : '-350px',
+          transition: 'right 0.3s ease',
+        }}>
+        <img  onClick={()=>setIsMenuOpen(false)} className='nav-mob-close' src={menu_close} alt="" />
+        <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>handleLinkClick("home")}>Home</p>{menu==="home"?<img src={underline}/>:<></>}</AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>handleLinkClick("about")}>About Me</p>{menu==="about"?<img src={underline}/>:<></>}</AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>handleLinkClick("services")}>Services</p>{menu==="services"?<img src={underline}/>:<></>}</AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>handleLinkClick("work")}>Portfolio</p>{menu==="work"?<img src={underline}/>:<></>}</AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>handleLinkClick("contact")}>Contact</p>{menu==="contact"?<img src={underline}/>:<></>}</AnchorLink></li>
       </ul>
       <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
     </div>
