@@ -15,17 +15,15 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I’ve completed an intensive software development bootcamp, gaining
-              hands-on experience in JavaScript, React, Node.js, PostgreSQL, and
-              agile teamwork.
+             
             </p>
             <p>
               {" "}
-              I enjoy solving problems, creating clean and responsive web
-              applications, and combining analytical thinking with creativity to
-              deliver user-friendly solutions. Known for my adaptability,
-              initiative, and collaborative spirit, I’m excited to keep learning
-              and contribute to meaningful projects in the tech world.
+                    My coding journey started some time ago, when I began experimenting with self-learning through various online platforms. I enjoyed exploring the basics, but it wasn’t until I joined a bootcamp and built my first project that I truly fell in love with programming.
+
+I loved that every day brought something new to learn, that I was never bored with what I was doing, and the pride I felt when I solved a problem I’d been stuck on for hours or saw my code run successfully. For me, coding isn’t just a job – it’s a way of life. It’s about constant self-development, discovering new technologies, meeting new people, and expanding my skills.
+
+I’m grateful to have found something I genuinely enjoy and want to dedicate my career to. Now, I’m ready to begin the adventure of a lifetime as a Software Developer.
             </p>
           </div>
           <div className="about-skills-2">
