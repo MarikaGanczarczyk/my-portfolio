@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.card-title h1 {
+  padding: 30px;
+  text-align: center;
+  margin: 20px;
+  font-size: 70px;
+  font-weight: 600;
+}
+.card-title {
+  position: relative;
+}
+
+.card-img {
+    display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.card-link {
+   
+  display: flex;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
