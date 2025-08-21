@@ -42,17 +42,34 @@ margin-top: 150px;
     cursor: pointer;
 
 }
-.hero-resume{
+.hero-linkedin{
      padding: 25px 75px;
       border-radius: 50px;
       border: 2px solid #fff;
       cursor: pointer;
 }
+.hero-linkedin a{
+    text-decoration: none;
+    color: white;
+}
+.hero-github{
+     padding: 25px 75px;
+      border-radius: 50px;
+      border: 2px solid #fff;
+      cursor: pointer;
+}
+.hero-github a{
+    text-decoration: none;
+    color: white;
+}
 .hero-connect:hover{
     border: 2px solid white;
 
 }
-.hero-resume:hover{
+.hero-linkedin:hover{
+    border-color: #4125a8;
+}
+.hero-github:hover{
     border-color: #4125a8;
 }
 @media(max-width:768px){

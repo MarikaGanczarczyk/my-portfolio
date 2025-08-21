@@ -1,7 +1,7 @@
 import './Services.css'
 
 import Serives_Data from '../../assets/services_data'
-import arrow_icon from '../../assets/arrow_icon.svg'
+
 
 const Services = () => {
   return (
