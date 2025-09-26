@@ -10,6 +10,7 @@ const mywork_data = [
     w_no: 1,
     title: "Memory Game",
     w_img: project1_img,
+    description: "An interactive memory matching game built with React : flip the cards, find matching pairs, and challenge your focus! Built with React (Hooks) and modern JavaScript, styled with CSS Modules, and powered by Vite / Create React App.",
     liveLink: "https://memory-game-magic.netlify.app/",
     githubLink: "https://github.com/MarikaGanczarczyk/memory-game.git",
   },
