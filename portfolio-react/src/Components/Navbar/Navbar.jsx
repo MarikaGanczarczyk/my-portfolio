@@ -8,7 +8,7 @@ import menu_close from '../../assets/menu_close.svg'
 
 
 const Navbar = () => {
-  const [menu, setMenu] = useState("home")
+  const [menu, setMenu] = useState("")
   
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -23,6 +23,7 @@ const Navbar = () => {
  
   return (
     <div className='navbar'>
+      
       <img src={menu_open}  onClick={()=> setIsMenuOpen(true)} alt="" className='nav-mob-open'/>
       <ul  className="nav-menu" style={{
           right: isMenuOpen ? '0' : '-350px',
@@ -36,7 +37,9 @@ const Navbar = () => {
         <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>handleLinkClick("contact")}>Contact</p>{menu==="contact"?<img src={underline}/>:<></>}</AnchorLink></li>
       </ul>
       <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
+       
     </div>
+   
   )
 }
 
