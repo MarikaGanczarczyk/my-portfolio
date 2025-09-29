@@ -7,8 +7,9 @@ const Hero = () => {
   return (
     <div id='home' className='hero'>
       <img src={MyPic} alt="" />
-      <h1><span >Hello! I’m Marika Ganczarczyk,</span> a Junior Frontend Developer passionate about building clean, responsive, and user-friendly websites. Welcome to my portfolio — here you’ll find some of my recent projects and skills. </h1>
-      <p>With a unique background in payroll, accounts, and credit control, I transitioned into tech to develop strong skills in programming, problem-solving, and building clean, responsive web applications. I combine analytical thinking with creativity to deliver practical, user-friendly solutions, and I’m eager to grow while contributing to impactful projects.</p>
+      <h1><span >Hi! I’m Marika Ganczarczyk,</span> a Junior Frontend Developer passionate about building clean, responsive, and user-friendly websites. Welcome to my portfolio — here you’ll find some of my recent projects and skills. </h1>
+      <p>I'm not a typical developer—and that's the point. My journey from finance to tech wasn't a straight line, but every detour taught me something valuable about solving real problems. I'm comfortable being uncomfortable, whether that's learning a new programming language or understanding a complex business domain. I bring curiosity, adaptability, and a knack for translating messy challenges into clean solutions.
+</p>
       <div className="hero-action">
         <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
         <div className="hero-linkedin"><a href="http://www.linkedin.com/in/marika-gańczarczyk-1144ab295" target="_blank"
