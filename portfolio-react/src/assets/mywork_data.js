@@ -8,7 +8,7 @@ import project6_img from "../assets/project_four.svg";
 const mywork_data = [
    {
     w_no: 1,
-    w_name: "Weather Forecast",
+    title: "Weather Forecast",
     w_img: project4_img,
     description:
       "Weather Live Forecast is a simple and responsive weather application built with React and CSS. It uses a public Weather API to fetch live weather data for the selected city — showing both the current weather and a 7-day forecast.",
