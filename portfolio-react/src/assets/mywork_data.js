@@ -1,7 +1,7 @@
 import project1_img from "../assets/project_one.svg";
-import project2_img from "../assets/project_two.svg";
+import project2_img from "../assets/project_two.png";
 import project3_img from "../assets/project_three.png";
-import project4_img from "../assets/project_weather2.png";
+import project4_img from "../assets/project_weather3.png";
 import project5_img from "../assets/project_four.svg";
 import project6_img from "../assets/project_four.svg";
 
@@ -11,7 +11,7 @@ const mywork_data = [
     title: "Weather Forecast",
     w_img: project4_img,
     description:
-      "Weather Live Forecast is a simple and responsive weather application built with React and CSS. It uses a public Weather API to fetch live weather data for the selected city — showing both the current weather and a 7-day forecast.",
+      "Weather Live Forecast is a simple and responsive weather application built with React and CSS. It uses a public Weather API to fetch live weather data for the selected city — showing both the current weather and a 7-day forecast. - Work in progress",
     liveLink: "https://weather-live-a.netlify.app/",
     githubLink: "https://github.com/MarikaGanczarczyk/weather-app",
   },
