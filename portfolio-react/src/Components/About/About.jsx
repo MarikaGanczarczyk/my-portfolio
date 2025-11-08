@@ -19,11 +19,7 @@ const About = () => {
             </p>
             <p>
               {" "}
-                    My coding journey started some time ago, when I began experimenting with self-learning through various online platforms. I enjoyed exploring the basics, but it wasn’t until I joined a bootcamp and built my first project that I truly fell in love with programming.
-
-I loved that every day brought something new to learn, that I was never bored with what I was doing, and the pride I felt when I solved a problem I’d been stuck on for hours or saw my code run successfully. For me, coding isn’t just a job – it’s a way of life. It’s about constant self-development, discovering new technologies, meeting new people, and expanding my skills.
-
-I’m grateful to have found something I genuinely enjoy and want to dedicate my career to. Now, I’m ready to begin the adventure of a lifetime as a Software Developer.
+                    I'm not a typical developer—and that's the point. My journey from finance to tech wasn't a straight line, but every detour taught me something valuable about solving real problems. I'm comfortable being uncomfortable, whether that's learning a new programming language or understanding a complex business domain. I bring curiosity, adaptability, and a knack for translating messy challenges into clean solutions.
             </p>
           </div>
           <div className="about-skills-2">
