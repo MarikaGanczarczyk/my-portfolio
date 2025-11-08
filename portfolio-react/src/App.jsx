@@ -7,7 +7,7 @@ import MyWork from "./Components/MyWork/MyWork";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import ProjectCard from "./Components/ProjectCard/ProjectCard";
-
+import SplashCursor from './Components/SplashCursor';
 const App = () => {
   const location = useLocation();
   const showNavbar = location.pathname === "/";
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className="app">
       {showNavbar && <Navbar />}
-
+<SplashCursor/>
       <Routes>
         <Route
           path="/"
