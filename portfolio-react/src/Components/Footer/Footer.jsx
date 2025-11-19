@@ -14,7 +14,7 @@ function Footer() {
       <hr />
       <div className="footer-bottom">
         <p className="footer-bottom-left">
-          © 2025 Marika Ganczarczyk. All rights reserved.
+          &copy; {new Date().getFullYear()} Marika Ganczarczyk. All rights reserved.
         </p>
         <div className="footer-bottom-right">
           <p>Term of Services</p>
